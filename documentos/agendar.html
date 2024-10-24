@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../folhas de estilo/geral.css">
+    <link rel="stylesheet" href="../folhas de estilo/agendar.css">
+    <title>Pet-Hub</title>
+</head>
+<body>
+    <header>
+        <h1><span>Pet</span>-Hub</h1>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="agendar.html">Agendar</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+
+        <div class="btn-menu">
+            <img src="../imagens/menu-regular-24.png">
+        </div>
+    </header>
+
+    <main>
+        <form action="#">
+            <div class="layout">
+                <section class="cliente">
+                    <h2>Informações do cliente</h2>
+                    <div class="grup-input">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" placeholder="Digite seu nome" name="nome" id="nome" maxlength="70" required>
+                    </div>
+
+                    <div class="grup-input">
+                        <label for="e-mail">E-mail</label>
+                        <input type="e-mail" placeholder="Digite seu e-mail" name="e-mail" id="e-mail" required>
+                    </div>
+
+                    <div class="grup-input">
+                        <label for="tel">Telefone</label>
+                        <input type="tel" placeholder="Digite seu telefone" name="tel" id="tel" required>
+                    </div>
+                </section>
+
+                <section class="pet">
+                    <h2>Informações do pet</h2>
+                    <div class="grup-input">
+                        <label for="nomePet">Nome do Pet</label>
+                        <input type="text" placeholder="Digite o nome do pet" name="nomePet" id="nomePet" maxlength="70" required>
+                    </div>
+
+                    <div class="grup-input">
+                        <label for="especie">Espécie</label>
+                        <input type="text" placeholder="Digite a espécie do pet" name="especie" id="especie" maxlength="70" required>
+                    </div>
+
+                    <div class="grup-input">
+                        <label for="raca">Raça</label>
+                        <input type="text" placeholder="Digite a raça do pet" name="raca" id="raca" maxlength="70" required>
+                    </div>
+
+                    <div class="grup-sexo">
+                        <label>Sexo: </label>
+                        <label for="opt1">Masculino</label>
+                        <input type="radio" name="sexo" id="opt1" required>
+                        <label for="opt2">Feminino</label>
+                        <input type="radio" name="sexo" id="opt2" required>
+                    </div>
+
+                    <div class="grup-input">
+                        <label for="idade">Idade</label>
+                        <input type="number" placeholder="Digite a idade do pet" name="idade" id="idade" min="0" required>
+                    </div>
+
+                    <div class="grup-input">
+                        <label for="peso">Peso</label>
+                        <input type="number" placeholder="Digite o peso do pet" name="peso" id="peso" min="0" step="0.01" required>
+                    </div>
+                </section>
+
+                <section class="detalhes">
+                    <h2>Detalhes</h2>
+                    <div class="grup-detalhes">
+                        <div class="det">
+                            <label for="banho">Banho</label>
+                            <input type="checkbox" name="banho" id="banho">
+                        </div>
+        
+                        <div class="det">
+                            <label for="hospedagem">Hospedagem</label>
+                            <input type="checkbox" name="hospedagem" id="hospedagem">
+                        </div>
+                        <div class="det">
+                            <label for="nutricao">Nutrição</label>
+                            <input type="checkbox" name="nutricao" id="nutricao">
+                        </div>
+                        <div class="det">
+                            <label for="consulta">Consulta</label>
+                            <input type="checkbox" name="consulta" id="consulta">
+                        </div>
+                    </div>
+
+                    <div class="grup-input">
+                        <label for="data">Data: </label>
+                        <input type="date" name="data" id="data" min="2024-05-02" required>
+                    </div><!--IMPORTANTE-->
+
+                    <div class="grup-input">
+                        <label for="hora">Hora: entre 09:00 e 18:00 </label>
+                        <input type="time" name="hora" id="hora" min="09:00" max="18:00" required>
+                    </div>
+
+                    <input type="submit" value="Agendar" id="button">
+                </section>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <span>
+            &copy;2024 - Todos os direitos reservados
+        </span>
+        <div class="img">
+            <a href="#"><img src="../imagens/instagram-alt-logo-24.png"></a>
+            <a href="#"><img src="../imagens/facebook-square-logo-24.png"></a>
+        </div>
+    </footer>
+
+    <script src="../scripts/geral.js"></script>
+</body>
+</html>

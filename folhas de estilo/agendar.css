@@ -1,0 +1,99 @@
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        margin-top: 100px;
+        margin-bottom: 127px;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 4px 4px 12px #aaaa;
+    }
+
+    .layout {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .layout section {
+        margin: 10px 50px;
+    }
+    
+    .layout section > h2{
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+    
+    .layout section > div > label,
+    .layout section > div > input {
+        font-size: 1.05em;
+    }
+    
+    .layout section .grup-input {
+        margin-top: 9px;
+    
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.det {
+    margin-top: 9px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#button {
+    width: 150px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(32, 32, 124);
+    color: white;
+    font-size: 1.3em;
+}
+    
+
+@media (max-width: 768px) {
+    main {
+        display: block;
+    }
+
+    form {
+        margin-top: 30px;
+        padding: 10%;
+    }
+
+    .layout {
+        display: block;
+        justify-content: center;
+    }
+
+    .layout section {
+        margin-top: 50px;
+    }
+ 
+    .layout section > h2{
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+    
+    .layout section > div > label,
+    .layout section > div > input {
+        font-size: 1.2em;
+    }
+    
+    .layout section .grup-input {
+        margin-top: 9px;
+    
+        display: flex;
+        flex-direction: column;
+    }
+}

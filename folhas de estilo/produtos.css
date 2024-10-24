@@ -1,0 +1,141 @@
+main {
+    min-height: 100vh;
+}
+
+.layout-conteudo{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: block;
+}
+
+.layout-conteudo > .titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.layout-conteudo > .titulo > h1 {
+    color:black;
+    font-weight: 600;
+    font-size: 2.1em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+    display: inline-block;
+}
+
+.layout-conteudo > .titulo > .carrinho-img-btn > img {
+    width: 35px;
+}
+
+.layout-conteudo > .titulo > .carrinho-img-btn {
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout-conteudo > .titulo > .carrinho-img-btn:hover {
+    cursor: pointer;
+}
+
+.cards {
+    width: 100%;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card {
+    width: 225px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.card > img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.text-box > h1 {
+    font-size: 1.05em;
+}
+
+.text-box > .btn-add > img {
+    width: 40px;
+}
+.text-box > .btn-add {
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 9px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: rgb(68, 142, 202);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box > .btn-add:hover {
+    cursor: pointer;
+    background-color:  rgb(61, 128, 183);
+}
+
+.text-box > .btn-add:active {
+    background-color:  rgb(45, 94, 134);
+}
+
+@media (max-width: 768px) {
+    .conteudo {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .cards {
+        width: 80%;
+        margin-top: 20px;
+    
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    
+    .card {
+        min-width: 120px;
+        flex: none;
+        border-radius: 12px;
+        box-shadow: 4px 4px 12px #aaaa;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .carrinho-img-btn {
+        position: fixed;
+        top: 70%;
+        right: 6%;
+    }
+}

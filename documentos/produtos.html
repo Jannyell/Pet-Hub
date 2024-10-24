@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../folhas de estilo/geral.css">
+    <link rel="stylesheet" href="../folhas de estilo/produtos.css">
+    <link rel="stylesheet" href="../folhas de estilo/carrinho.css">
+    <title>Pet-Hub</title>
+</head>
+<body>
+    <header>
+        <h1><span>Pet</span>-Hub</h1>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="agendar.html">Agendar</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+
+        <div class="btn-menu">
+            <img src="../imagens/menu-regular-24.png">
+        </div>
+    </header>
+
+    <main>
+        <div class="layout-conteudo">
+            <div class="titulo">
+                <h1>Nossos produtos mais vendidos</h1>
+                <div class="carrinho-img-btn" onclick="mostrarCarrinho(); voltarAoTopo()">
+                    <img src="../icones produtos/cart-solid-48.png">
+                </div>
+            </div>
+            
+            <section class="conteudo">
+                <section class="cards">
+                    <div class="card">
+                        <img src="../imagens/friskies.jpg">
+                        <div class="text-box">
+                            <h1>Friskies para gatos adultos</h1>
+                            <span>R$ 296,99</span>
+                            <div class="btn-add" onclick="adicionar('../imagens/friskies.jpg','296,99')">
+                                <img src="../icones produtos/plus-regular-48.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../imagens/pedigree.jpg">
+                        <div class="text-box">
+                            <h1>Pedigree para cães adultos</h1>
+                            <span>R$ 227,90</span>
+                            <div class="btn-add" onclick="adicionar('../imagens/pedigree.jpg','227,90')">
+                                <img src="../icones produtos/plus-regular-48.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../imagens/arranhador.jpg">
+                        <div class="text-box">
+                            <h1>Arranhador</h1>
+                            <span>R$ 55,11</span>
+                            <div class="btn-add" onclick="adicionar('../imagens/arranhador.jpg','51,11')">
+                                <img src="../icones produtos/plus-regular-48.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../imagens/shampoo.jpeg">
+                        <div class="text-box">
+                            <h1>Shampoo para Pets</h1>
+                            <span>R$ 109,00</span>
+                            <div class="btn-add" onclick="adicionar('../imagens/Shampoo.jpeg','109,00')">
+                                <img src="../icones produtos/plus-regular-48.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../imagens/comedouro.png">
+                        <div class="text-box">
+                            <h1>Comedouro automático</h1>
+                            <span>R$ 499,99</span>
+                            <div class="btn-add" onclick="adicionar('../imagens/comedouro.png','499,99')">
+                                <img src="../icones produtos/plus-regular-48.png">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+
+        <section id="layout-carrinho">
+            <div class="titulo">
+                <h1>CARRINHO</h1>
+                <div class="carrinho-img-btn" onclick="mostrarProdutos(); voltarAoTopo()">
+                    <img src="../icones produtos/x-regular-48.png">
+                </div>
+            </div>
+
+            <div class="text-layout">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produtos</th>
+                            <th>Quantidade</th>
+                            <th id="coluna-valor">Valor</th>
+                        </tr>
+                    </thead><!--Cabeçalho-->
+
+                    <tbody id="carrinho">
+                    </tbody>
+                </table>
+            </div>
+            <h2 id="Total">Total: <span>0,00</span> R$</h2>
+            <div id="finalizar-btn" onclick="compraMsg()">Comprar</div>
+        </section>
+    </main>
+    
+    <script src="../scripts/carrinho.js"></script>
+    <script src="../scripts/produtos.js"></script>
+    <footer>
+        <span>
+            &copy;2024 - Todos os direitos reservados
+        </span>
+        <div class="img">
+            <a href="#"><img src="../imagens/instagram-alt-logo-24.png"></a>
+            <a href="#"><img src="../imagens/facebook-square-logo-24.png"></a>
+        </div>
+    </footer>
+
+    <script src="../scripts/geral.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+#layout-carrinho {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: none;/*Alterar*/
+}
+
+#layout-carrinho > .titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#layout-carrinho > .titulo > h1 {
+    color: #6a6a68;
+    border-bottom: 2px solid #6a6a68;
+    font-weight: 600;
+    font-size: 2.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: inline-block;
+}
+
+#layout-carrinho > .titulo > .carrinho-img-btn > img {
+    width: 35px;
+}
+
+#layout-carrinho > .titulo > .carrinho-img-btn {
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#layout-carrinho > .titulo > .carrinho-img-btn:hover {
+    cursor: pointer;
+}
+
+
+#layout-carrinho > .text-layout {
+    padding: 14px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#layout-carrinho > .text-layout  h2 {
+    font-weight: 400;
+}
+
+/*Tabela*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #ebebeb;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+tbody > tr > td {
+    border-bottom: 2px solid #a4a49f;
+    padding: 5px;
+}
+
+tbody > tr > td > img {
+    width: 54px;
+}
+
+/*Coluna Quantidade*/
+#container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-menos {
+    background-color: brown;
+}
+
+.btn-menos:hover {
+    background-color: rgb(142, 36, 36);
+    cursor: pointer;
+}
+
+.btn-menos:active {
+    background-color:  rgb(123, 32, 32);
+}
+
+.btn-menos, .btn-mais {
+    padding: 9px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-menos img, .btn-mais img {
+    width: 17px;
+}
+
+.btn-mais {
+    background-color: green;
+}
+
+.btn-mais:hover {
+    background-color:  rgb(2, 121, 2);
+    cursor: pointer;
+}
+
+.btn-mais:active {
+    background-color: rgb(2, 102, 2);
+}
+
+.quantidade {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Coluna Valor*/
+#coluna-valor, .valor {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .valor >  div {
+        width: 57%;
+    }
+}
+.valor >  div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-right: 0;
+}
+
+.valor .btn-remover > img {
+    width: 20px;
+}
+
+.valor .btn-remover {
+    background-color: rgb(210, 22, 22);
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valor .btn-remover:hover {
+    cursor: pointer;
+    background-color: rgb(172, 21, 21);
+}
+
+.valor .btn-remover:active {
+    cursor: pointer;
+    background-color: rgb(136, 18, 18);
+}
+
+/*Total e finalizar*/
+#Total {
+    text-align: left;
+    margin-left: 20px;
+}
+
+#finalizar-btn {
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 20px;
+    background-color: rgb(68, 142, 202);
+    color: white;
+    font-size: 1.7em;
+    
+    width: 200px;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+#finalizar-btn:hover {
+    cursor: pointer;
+    background-color:  rgb(61, 128, 183);
+}
+
+#finalizar-btn:active {
+    background-color:  rgb(45, 94, 134);
+}
+
+
+@media (max-width: 768px) {
+    #layout-carrinho {
+        width: 90%;
+    }
+
+}

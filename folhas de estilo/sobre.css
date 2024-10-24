@@ -1,0 +1,37 @@
+main {
+  margin: 0px 10% 90px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+
+}
+.conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conteudo > .text-box {
+  width: 600px
+}
+
+.conteudo > .text-box > h2 {
+font-size: 2.5em;
+margin-bottom: 10px;
+}
+
+.img-redes {
+width: 300px;
+
+display: flex;
+gap: 40px;
+}
+
+@media (max-width:768px) {
+  .img-redes {
+    display: inline;
+  }
+}
